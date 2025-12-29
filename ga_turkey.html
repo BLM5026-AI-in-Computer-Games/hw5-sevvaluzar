@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07010a31a8d7b15b92cb0b504396a04a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_07010a31a8d7b15b92cb0b504396a04a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_07010a31a8d7b15b92cb0b504396a04a = L.map(
+                "map_07010a31a8d7b15b92cb0b504396a04a",
+                {
+                    center: [39.0, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_834a0c05e026e23b7f8aff5b26a17f24 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_834a0c05e026e23b7f8aff5b26a17f24.addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var circle_d1398d797d65dcdce526d1284b3823d6 = L.circle(
+                [41.0082, 28.9784],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_d1398d797d65dcdce526d1284b3823d6.bindTooltip(
+                `<div>
+                     Istanbul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a9cac3a23a6164022824f4819d38c515 = L.circle(
+                [39.9334, 32.8597],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_a9cac3a23a6164022824f4819d38c515.bindTooltip(
+                `<div>
+                     Ankara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_fc8bf35f2ce113356709271acbc91adb = L.circle(
+                [38.4237, 27.1428],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_fc8bf35f2ce113356709271acbc91adb.bindTooltip(
+                `<div>
+                     Izmir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_0d053596ce2a8cf8d078dc73216dab9f = L.circle(
+                [40.195, 29.06],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_0d053596ce2a8cf8d078dc73216dab9f.bindTooltip(
+                `<div>
+                     Bursa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_968a632cf98938466fc3fbd162c1860b = L.circle(
+                [36.8969, 30.7133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_968a632cf98938466fc3fbd162c1860b.bindTooltip(
+                `<div>
+                     Antalya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_53355de2cc56f3042453dae1a1a439d0 = L.circle(
+                [37.0, 35.3213],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_53355de2cc56f3042453dae1a1a439d0.bindTooltip(
+                `<div>
+                     Adana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6ef0f419f41bfbaf43df416816b77558 = L.circle(
+                [37.8746, 32.4932],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_6ef0f419f41bfbaf43df416816b77558.bindTooltip(
+                `<div>
+                     Konya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1240bda43c43bee8e2b0baa165581b7c = L.circle(
+                [37.0662, 37.3833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_1240bda43c43bee8e2b0baa165581b7c.bindTooltip(
+                `<div>
+                     Gaziantep
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2a5e13680955eb95b7c2b9ba789a69b4 = L.circle(
+                [38.7312, 35.4787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_2a5e13680955eb95b7c2b9ba789a69b4.bindTooltip(
+                `<div>
+                     Kayseri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_8d594079cba1eb77943aad51be556b25 = L.circle(
+                [41.2867, 36.33],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            circle_8d594079cba1eb77943aad51be556b25.bindTooltip(
+                `<div>
+                     Samsun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37bf079c3bf4fc393b7e6752a7006d5e = L.marker(
+                [38.27599192136643, 27.319200230956884],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_75ec8daa5042768fe3a83dc9a009c6b2 = L.marker(
+                [40.333059434169186, 28.888278332363345],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_2a7d65f88fbe7c8304c4ad310b9076b5 = L.marker(
+                [40.82834673361493, 28.901323340288027],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_30431d7fb658074598bfe75f284a279d = L.marker(
+                [40.095626802183915, 32.96276020659235],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_c19dffa449c79ad6bafe6fd3747c5981 = L.marker(
+                [41.39681305875641, 36.282861318067624],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_1cd15c46174a6bef94596e82777bfc7f = L.marker(
+                [38.917445863988064, 35.48770198669665],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_9c6e66eb7379b8a523862a5605f946a0 = L.marker(
+                [37.254065153165556, 37.336511267798585],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_360dd0a9b13fba42949a38c2208f4cae = L.marker(
+                [36.95702816019552, 35.114982088332034],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_7ad4d2008ed049f2dccb0df6fabf4dc2 = L.marker(
+                [37.85196809028462, 32.54783210998399],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var marker_72552988726468a83540192eabe1f0f4 = L.marker(
+                [36.75935316016397, 30.916245585222974],
+                {
+}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+    
+            var poly_line_bcbd7c3ed71b1f4bf91ec98df33a2f5f = L.polyline(
+                [[38.27599192136643, 27.319200230956884], [40.333059434169186, 28.888278332363345], [40.82834673361493, 28.901323340288027], [40.095626802183915, 32.96276020659235], [41.39681305875641, 36.282861318067624], [38.917445863988064, 35.48770198669665], [37.254065153165556, 37.336511267798585], [36.95702816019552, 35.114982088332034], [37.85196809028462, 32.54783210998399], [36.75935316016397, 30.916245585222974], [38.27599192136643, 27.319200230956884]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_07010a31a8d7b15b92cb0b504396a04a);
+        
+</script>
+</html>
